@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Eissan | Specialist Dermatologist & Aesthetic Consultant Dubai</title>
+  <meta name="description" content="Official clinical and aesthetic dermatology practice of Dr. Eissan in Dubai. DHA licensed specialist offering bespoke skin rejuvenation, anti-aging, laser therapies, and clinical dermatology.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              ivory: '#FAF8F5',
+              cream: '#F4EFEB',
+              gold: '#C5A880',
+              goldDark: '#A6885E',
+              goldLight: '#E8DAC8',
+              charcoal: '#1A1C1E',
+              slate: '#474D54',
+              muted: '#7A838E',
+              roseSubtle: '#F9F1ED'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          },
+          boxShadow: {
+            'luxury': '0 20px 40px -15px rgba(26, 28, 30, 0.07)',
+            'card': '0 10px 30px -10px rgba(197, 168, 128, 0.15)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF8F5;
+      color: #1A1C1E;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+    .font-serif-lux {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .glass-nav {
+      background: rgba(250, 248, 245, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(232, 218, 200, 0.6);
+    }
+    .gold-gradient-bg {
+      background: linear-gradient(135deg, #DFCEBA 0%, #C5A880 50%, #B09062 100%);
+    }
+    .gold-text-gradient {
+      background: linear-gradient(135deg, #B59367 0%, #9E7D4E 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    /* Slider Range styling for Before/After */
+    input[type=range].lux-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      background: transparent;
+    }
+    input[type=range].lux-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      border: 3px solid #C5A880;
+      cursor: ew-resize;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    }
+    input[type=range].lux-slider::-moz-range-thumb {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      border: 3px solid #C5A880;
+      cursor: ew-resize;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    }
+  </style>
+</head>
+<body class="selection:bg-brand-goldLight selection:text-brand-charcoal antialiased">
+
+  <aside class="bg-brand-charcoal text-brand-goldLight text-xs py-2 px-4 border-b border-white/10" aria-label="Clinic alert">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="tracking-wide">Accepting VIP Consultations in Jumeirah & Dubai Marina Clinics</span>
+      </div>
+      <div class="flex items-center space-x-6">
+        <a href="tel:+97148003477" class="hover:text-white transition flex items-center gap-1.5">
+          <i class="ph ph-phone text-sm"></i> +971 4 800-EISSAN
+        </a>
+        <span class="hidden sm:inline text-white/30">|</span>
+        <span class="hidden sm:flex items-center gap-1.5 text-brand-ivory/80">
+          <i class="ph ph-shield-check text-brand-gold"></i> DHA License: #DHA-P-029418
+        </span>
+      </div>
+    </div>
+  </aside>
+
+  <header class="sticky top-0 z-40 glass-nav border-b border-brand-goldLight/40 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex flex-col group cursor-pointer focus:outline-none">
+        <span class="font-serif-lux text-2xl sm:text-3xl font-bold tracking-tight text-brand-charcoal group-hover:text-brand-goldDark transition">
+          Dr. Eissan
+        </span>
+        <span class="text-[10px] uppercase tracking-[0.28em] text-brand-slate font-medium">
+          Dermatology & Aesthetic Medicine
+        </span>
+      </a>
+
+      <!-- Desktop Nav Items -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-brand-slate">
+        <a href="#about" class="hover:text-brand-goldDark transition">About Dr. Eissan</a>
+        <a href="#treatments" class="hover:text-brand-goldDark transition">Specialties & Treatments</a>
+        <a href="#before-after" class="hover:text-brand-goldDark transition">Results Showcase</a>
+        <a href="#testimonials" class="hover:text-brand-goldDark transition">Reviews</a>
+        <a href="#location" class="hover:text-brand-goldDark transition">Clinic</a>
+      </nav>
+
+      <!-- CTA Buttons -->
+      <div class="hidden sm:flex items-center space-x-4">
+        <button onclick="openBookingModal()" class="px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-brand-charcoal bg-brand-gold hover:bg-brand-goldDark hover:text-white shadow-sm transition-all duration-200">
+          Book Consultation
+        </button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden p-2 text-brand-charcoal hover:text-brand-gold focus:outline-none" aria-label="Toggle Navigation Menu">
+        <i class="ph ph-list text-2xl" id="menuIcon"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden px-6 pt-3 pb-6 border-t border-brand-goldLight/50 bg-brand-ivory space-y-3 text-sm">
+      <a href="#about" class="block py-2 text-brand-charcoal hover:text-brand-gold transition mobile-link">About Dr. Eissan</a>
+      <a href="#treatments" class="block py-2 text-brand-charcoal hover:text-brand-gold transition mobile-link">Specialties & Treatments</a>
+      <a href="#before-after" class="block py-2 text-brand-charcoal hover:text-brand-gold transition mobile-link">Results Showcase</a>
+      <a href="#testimonials" class="block py-2 text-brand-charcoal hover:text-brand-gold transition mobile-link">Patient Testimonials</a>
+      <a href="#faq" class="block py-2 text-brand-charcoal hover:text-brand-gold transition mobile-link">FAQ</a>
+      <a href="#location" class="block py-2 text-brand-charcoal hover:text-brand-gold transition mobile-link">Location & Contact</a>
+      <button onclick="openBookingModal()" class="w-full mt-4 py-3 rounded-full text-xs font-semibold uppercase tracking-wider text-brand-charcoal bg-brand-gold hover:bg-brand-goldDark hover:text-white transition">
+        Book Consultation
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="relative pt-12 pb-20 md:py-24 overflow-hidden">
+      <!-- Subtle Decorative Blur Orbs -->
+      <div class="absolute -top-32 right-0 w-96 h-96 bg-brand-goldLight/30 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute top-1/2 -left-20 w-80 h-80 bg-brand-cream/60 rounded-full blur-2xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Copy -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-cream/90 border border-brand-goldLight text-xs tracking-wide text-brand-charcoal">
+              <i class="ph-fill ph-sparkle text-brand-gold"></i>
+              <span>Specialist Dermatologist & Aesthetic Consultant</span>
+              <span class="text-brand-gold font-bold">•</span>
+              <span>Dubai, UAE</span>
+            </div>
+
+            <h1 class="font-serif-lux text-4xl sm:text-5xl md:text-6xl text-brand-charcoal leading-[1.12] font-semibold">
+              Elevating Clinical & <br class="hidden sm:inline">
+              <span class="gold-text-gradient italic">Bespoke Aesthetic</span> Dermatology
+            </h1>
+
+            <p class="text-base sm:text-lg text-brand-slate max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+              Combining world-class European board-certified expertise with Dubai’s pinnacle of aesthetic artistry. Restoring skin vitality, natural facial symmetry, and timeless confidence.
+            </p>
+
+            <!-- Credential Badges -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+              <div class="flex items-center gap-2 text-xs font-medium text-brand-charcoal bg-white/70 px-3 py-2 rounded-lg border border-brand-goldLight/60">
+                <i class="ph-fill ph-certificate text-brand-gold text-base"></i>
+                <span>DHA Specialist Licensed</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs font-medium text-brand-charcoal bg-white/70 px-3 py-2 rounded-lg border border-brand-goldLight/60">
+                <i class="ph-fill ph-medal text-brand-gold text-base"></i>
+                <span>European Board Certified</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs font-medium text-brand-charcoal bg-white/70 px-3 py-2 rounded-lg border border-brand-goldLight/60">
+                <i class="ph-fill ph-heartbeat text-brand-gold text-base"></i>
+                <span>15+ Years Clinical Practice</span>
+              </div>
+            </div>
+
+            <!-- Call to Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+              <button onclick="openBookingModal()" class="w-full sm:w-auto px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-charcoal bg-brand-gold hover:bg-brand-goldDark hover:text-white shadow-luxury hover:scale-[1.02] transition-all duration-200">
+                Book a Consultation
+              </button>
+              <a href="#treatments" class="w-full sm:w-auto px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-charcoal bg-white/80 hover:bg-white border border-brand-goldLight transition-all duration-200 text-center">
+                Explore Treatments
+              </a>
+            </div>
+
+            <!-- Key Practice Stats -->
+            <div class="grid grid-cols-3 gap-3 pt-6 border-t border-brand-goldLight/40 max-w-lg mx-auto lg:mx-0">
+              <div>
+                <p class="font-serif-lux text-2xl sm:text-3xl font-bold text-brand-charcoal">15k+</p>
+                <p class="text-xs text-brand-muted">Patients Treated</p>
+              </div>
+              <div>
+                <p class="font-serif-lux text-2xl sm:text-3xl font-bold text-brand-charcoal">98.4%</p>
+                <p class="text-xs text-brand-muted">Patient Satisfaction</p>
+              </div>
+              <div>
+                <p class="font-serif-lux text-2xl sm:text-3xl font-bold text-brand-charcoal">Top 10</p>
+                <p class="text-xs text-brand-muted">Aesthetic Leader Dubai</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Image & Aesthetic Card Stack -->
+          <div class="lg:col-span-5 relative flex justify-center">
+            <div class="relative w-full max-w-sm sm:max-w-md">
+              
+              <!-- Subtle Background Frame -->
+              <div class="absolute inset-0 translate-x-3 translate-y-3 rounded-3xl border-2 border-brand-gold/40"></div>
+
+              <!-- Main Doctor Portrait (High-res curated medical portrait) -->
+              <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-brand-cream border border-brand-goldLight aspect-[4/5]">
+                <img 
+                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=900" 
+                  alt="Dr. Eissan Specialist Dermatologist Dubai" 
+                  class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+                  loading="eager"
+                  onerror="this.src='https://placehold.co/800x1000/F4EFEB/1A1C1E?text=Dr.+Eissan+Dermatology'"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/80 via-transparent to-transparent"></div>
+                
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                  <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-[11px] mb-1">
+                    <i class="ph-fill ph-check-circle text-emerald-400"></i> Verified Medical Consultant
+                  </div>
+                  <h3 class="font-serif-lux text-2xl font-semibold">Dr. Eissan, MD</h3>
+                  <p class="text-xs text-brand-goldLight">Head of Dermatology & Laser Services</p>
+                </div>
+              </div>
+
+              <!-- Floating Quick Stat Badge -->
+              <div class="absolute -bottom-6 -left-6 hidden sm:flex items-center gap-3 p-4 rounded-2xl glass-card shadow-card">
+                <div class="w-12 h-12 rounded-xl gold-gradient-bg flex items-center justify-center text-white shadow-inner">
+                  <i class="ph-bold ph-star text-2xl"></i>
+                </div>
+                <div>
+                  <div class="flex items-center gap-1 text-amber-500 text-xs">
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                  </div>
+                  <p class="text-xs font-bold text-brand-charcoal">4.9/5 Rating</p>
+                  <p class="text-[10px] text-brand-muted">Over 450 Google Reviews</p>
+                </div>
+              </div>
+
+              <!-- Floating Quick Badge Right -->
+              <div class="absolute -top-4 -right-4 bg-brand-charcoal text-white p-3 rounded-2xl shadow-xl flex items-center gap-2.5">
+                <i class="ph ph-sparkle text-brand-gold text-lg"></i>
+                <div class="text-left">
+                  <p class="text-[10px] uppercase tracking-wider text-brand-gold">VIP Clinic</p>
+                  <p class="text-xs font-semibold">Private & Discrete</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 bg-brand-cream/40 border-y border-brand-goldLight/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-5 space-y-6">
+            <div class="relative rounded-2xl overflow-hidden shadow-lg border border-brand-goldLight">
+              <img 
+                src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=900" 
+                alt="Modern Dermatology Clinic Equipment"
+                class="w-full h-80 object-cover"
+                onerror="this.src='https://placehold.co/800x600/FAF8F5/1A1C1E?text=Clinical+Consultation'"
+              >
+              <div class="p-6 bg-white">
+                <blockquote class="font-serif-lux text-lg italic text-brand-charcoal">
+                  "True aesthetics is not about changing your appearance; it is about harmonizing your features, enhancing natural tissue health, and restoring youthfulness with mathematical precision."
+                </blockquote>
+                <p class="mt-3 text-xs uppercase tracking-wider font-semibold text-brand-goldDark">— Dr. Eissan</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-block text-xs uppercase tracking-widest text-brand-goldDark font-bold">
+              About the Specialist
+            </div>
+            <h2 class="font-serif-lux text-3xl sm:text-4xl text-brand-charcoal font-semibold">
+              Combining Evidence-Based Science With Artistic Harmony
+            </h2>
+            <p class="text-brand-slate leading-relaxed text-sm sm:text-base">
+              With over 15 years of prestigious clinical practice in Dubai and Europe, Dr. Eissan has established a benchmark for natural-looking cosmetic rejuvenation and complex clinical dermatology. As an esteemed speaker at international dermatology conferences and a trusted physician to Dubai’s discerning clientele, she prioritizes patient safety, state-of-the-art technology, and tailored longevity plans.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="p-4 rounded-xl bg-white border border-brand-goldLight/60">
+                <i class="ph ph-graduation-cap text-2xl text-brand-gold mb-2 block"></i>
+                <h4 class="font-semibold text-brand-charcoal text-sm">International Qualifications</h4>
+                <p class="text-xs text-brand-muted mt-1">Specialized clinical doctorate, Fellow of European Academy of Dermatology and Venereology (EADV).</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-white border border-brand-goldLight/60">
+                <i class="ph ph-shield-plus text-2xl text-brand-gold mb-2 block"></i>
+                <h4 class="font-semibold text-brand-charcoal text-sm">FDA-Approved Technologies</h4>
+                <p class="text-xs text-brand-muted mt-1">Pico lasers, Ultherapy, Morpheus8, and premium European injectables ensuring maximum efficacy.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-white border border-brand-goldLight/60">
+                <i class="ph ph-fingerprint text-2xl text-brand-gold mb-2 block"></i>
+                <h4 class="font-semibold text-brand-charcoal text-sm">Personalized Facial Mapping</h4>
+                <p class="text-xs text-brand-muted mt-1">No standardized templates; 3D photographic analysis and bespoke micro-dosing techniques.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-white border border-brand-goldLight/60">
+                <i class="ph ph-lock-key text-2xl text-brand-gold mb-2 block"></i>
+                <h4 class="font-semibold text-brand-charcoal text-sm">Confidentiality & Privacy</h4>
+                <p class="text-xs text-brand-muted mt-1">Dedicated VIP suites in Dubai offering utmost discretion and personalized care.</p>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <button onclick="openBookingModal()" class="inline-flex items-center gap-2 text-xs uppercase tracking-wider font-bold text-brand-charcoal hover:text-brand-gold transition">
+                <span>Request a Private Consultation with Dr. Eissan</span>
+                <i class="ph-bold ph-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="treatments" class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+          <span class="text-xs uppercase tracking-widest text-brand-goldDark font-bold">Comprehensive Care</span>
+          <h2 class="font-serif-lux text-3xl sm:text-4xl md:text-5xl text-brand-charcoal font-semibold">
+            Signature Clinical & Aesthetic Solutions
+          </h2>
+          <p class="text-brand-slate text-sm sm:text-base">
+            Every treatment is customized using precision diagnostic mapping to safely enhance your beauty while preserving tissue integrity.
+          </p>
+
+          <!-- Treatment Filter Categories -->
+          <div class="flex flex-wrap justify-center gap-2 pt-4" id="treatmentFilters">
+            <button onclick="filterTreatments('all')" class="treatment-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition bg-brand-charcoal text-white" data-filter="all">All Specialties</button>
+            <button onclick="filterTreatments('aesthetic')" class="treatment-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition bg-white text-brand-slate border border-brand-goldLight/80 hover:bg-brand-cream" data-filter="aesthetic">Aesthetic & Fillers</button>
+            <button onclick="filterTreatments('clinical')" class="treatment-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition bg-white text-brand-slate border border-brand-goldLight/80 hover:bg-brand-cream" data-filter="clinical">Clinical Dermatology</button>
+            <button onclick="filterTreatments('laser')" class="treatment-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition bg-white text-brand-slate border border-brand-goldLight/80 hover:bg-brand-cream" data-filter="laser">Laser & Rejuvenation</button>
+            <button onclick="filterTreatments('hair')" class="treatment-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition bg-white text-brand-slate border border-brand-goldLight/80 hover:bg-brand-cream" data-filter="hair">Hair Restoration</button>
+          </div>
+        </div>
+
+        <!-- Treatment Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="treatmentsContainer">
+          
+          <!-- Treatment Item 1 -->
+          <div class="treatment-card glass-card rounded-2xl p-6 hover:shadow-card transition-all duration-300 flex flex-col justify-between" data-category="aesthetic">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-brand-cream flex items-center justify-center text-brand-goldDark mb-4">
+                <i class="ph ph-drop text-2xl"></i>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-semibold uppercase tracking-wider text-brand-goldDark">Aesthetic Facial</span>
+                <span class="text-xs text-brand-muted flex items-center gap-1"><i class="ph ph-clock"></i> 45 Mins</span>
+              </div>
+              <h3 class="font-serif-lux text-2xl font-semibold text-brand-charcoal mt-2">Harmonized Dermal Fillers & Botox</h3>
+              <p class="text-xs text-brand-slate mt-2 leading-relaxed">
+                Micro-droplet hyaluronic acid contouring for lips, jawline, temples, and subtle wrinkle relaxers preserving full emotional expression.
+              </p>
+              <ul class="mt-4 space-y-1.5 text-xs text-brand-slate/90">
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Natural non-frozen results</li>
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Premium Juvederm & Teosyal range</li>
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Zero-downtime micro-cannula technique</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-brand-goldLight/40 flex items-center justify-between">
+              <span class="text-xs font-semibold text-brand-charcoal">Custom Dosage</span>
+              <button onclick="selectServiceForBooking('Harmonized Dermal Fillers & Botox')" class="text-xs font-bold text-brand-goldDark hover:underline inline-flex items-center gap-1">
+                Book Consultation <i class="ph ph-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Treatment Item 2 -->
+          <div class="treatment-card glass-card rounded-2xl p-6 hover:shadow-card transition-all duration-300 flex flex-col justify-between" data-category="laser">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-brand-cream flex items-center justify-center text-brand-goldDark mb-4">
+                <i class="ph ph-lightning text-2xl"></i>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-semibold uppercase tracking-wider text-brand-goldDark">Laser Technology</span>
+                <span class="text-xs text-brand-muted flex items-center gap-1"><i class="ph ph-clock"></i> 60 Mins</span>
+              </div>
+              <h3 class="font-serif-lux text-2xl font-semibold text-brand-charcoal mt-2">Morpheus8 & PicoSure Laser</h3>
+              <p class="text-xs text-brand-slate mt-2 leading-relaxed">
+                Sub-dermal fractional remodeling combined with ultra-fast picosecond wavelengths to erase hyperpigmentation, melasma, and tighten deep skin layers.
+              </p>
+              <ul class="mt-4 space-y-1.5 text-xs text-brand-slate/90">
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Melasma & sun damage removal</li>
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Collagen and elastin renewal</li>
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Safe for all Middle Eastern skin tones</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-brand-goldLight/40 flex items-center justify-between">
+              <span class="text-xs font-semibold text-brand-charcoal">Tailored Sessions</span>
+              <button onclick="selectServiceForBooking('Morpheus8 & PicoSure Laser')" class="text-xs font-bold text-brand-goldDark hover:underline inline-flex items-center gap-1">
+                Book Consultation <i class="ph ph-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Treatment Item 3 -->
+          <div class="treatment-card glass-card rounded-2xl p-6 hover:shadow-card transition-all duration-300 flex flex-col justify-between" data-category="clinical">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-brand-cream flex items-center justify-center text-brand-goldDark mb-4">
+                <i class="ph ph-shield-check text-2xl"></i>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-semibold uppercase tracking-wider text-brand-goldDark">Clinical Care</span>
+                <span class="text-xs text-brand-muted flex items-center gap-1"><i class="ph ph-clock"></i> 30-45 Mins</span>
+              </div>
+              <h3 class="font-serif-lux text-2xl font-semibold text-brand-charcoal mt-2">Acne, Rosacea & Eczema Therapy</h3>
+              <p class="text-xs text-brand-slate mt-2 leading-relaxed">
+                Specialized medical dermatology protocol tackling stubborn adult cystic acne, flare-ups, vascular redness, and long-term barrier repair.
+              </p>
+              <ul class="mt-4 space-y-1.5 text-xs text-brand-slate/90">
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Biopsy and skin pathology analysis</li>
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Targeted prescription and laser cure</li>
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Post-inflammatory scar revision</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-brand-goldLight/40 flex items-center justify-between">
+              <span class="text-xs font-semibold text-brand-charcoal">Medical Diagnosis</span>
+              <button onclick="selectServiceForBooking('Acne & Rosacea Clinical Protocol')" class="text-xs font-bold text-brand-goldDark hover:underline inline-flex items-center gap-1">
+                Book Consultation <i class="ph ph-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Treatment Item 4 -->
+          <div class="treatment-card glass-card rounded-2xl p-6 hover:shadow-card transition-all duration-300 flex flex-col justify-between" data-category="aesthetic">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-brand-cream flex items-center justify-center text-brand-goldDark mb-4">
+                <i class="ph ph-sparkle text-2xl"></i>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-semibold uppercase tracking-wider text-brand-goldDark">Bio-Remodeling</span>
+                <span class="text-xs text-brand-muted flex items-center gap-1"><i class="ph ph-clock"></i> 30 Mins</span>
+              </div>
+              <h3 class="font-serif-lux text-2xl font-semibold text-brand-charcoal mt-2">Profhilo® & Polynucleotides (PN)</h3>
+              <p class="text-xs text-brand-slate mt-2 leading-relaxed">
+                Cellular biorevitalization injecting ultra-pure concentrated hyaluronic acid and salmon-derived DNA fragments for unmatched glass skin hydration.
+              </p>
+              <ul class="mt-4 space-y-1.5 text-xs text-brand-slate/90">
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Face, neck, decollete, and hand revitalization</li>
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Deep tissue elasticity revival</li>
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Stimulates 4 types of human collagen</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-brand-goldLight/40 flex items-center justify-between">
+              <span class="text-xs font-semibold text-brand-charcoal">Bespoke Course</span>
+              <button onclick="selectServiceForBooking('Profhilo & Skin Boosters')" class="text-xs font-bold text-brand-goldDark hover:underline inline-flex items-center gap-1">
+                Book Consultation <i class="ph ph-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Treatment Item 5 -->
+          <div class="treatment-card glass-card rounded-2xl p-6 hover:shadow-card transition-all duration-300 flex flex-col justify-between" data-category="hair">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-brand-cream flex items-center justify-center text-brand-goldDark mb-4">
+                <i class="ph ph-flower-lotus text-2xl"></i>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-semibold uppercase tracking-wider text-brand-goldDark">Hair & Scalp</span>
+                <span class="text-xs text-brand-muted flex items-center gap-1"><i class="ph ph-clock"></i> 45 Mins</span>
+              </div>
+              <h3 class="font-serif-lux text-2xl font-semibold text-brand-charcoal mt-2">PRP, Exosomes & Hair Loss Therapy</h3>
+              <p class="text-xs text-brand-slate mt-2 leading-relaxed">
+                Biotech scalp mesotherapy utilizing autologous platelet-rich plasma and plant exosomes to reactivate dormant hair follicles and thicken hair density.
+              </p>
+              <ul class="mt-4 space-y-1.5 text-xs text-brand-slate/90">
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Androgenetic alopecia support</li>
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Post-partum & stress hair shedding</li>
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Scalp micro-circulation boost</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-brand-goldLight/40 flex items-center justify-between">
+              <span class="text-xs font-semibold text-brand-charcoal">Trichoscopy Included</span>
+              <button onclick="selectServiceForBooking('PRP & Hair Loss Therapy')" class="text-xs font-bold text-brand-goldDark hover:underline inline-flex items-center gap-1">
+                Book Consultation <i class="ph ph-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Treatment Item 6 -->
+          <div class="treatment-card glass-card rounded-2xl p-6 hover:shadow-card transition-all duration-300 flex flex-col justify-between" data-category="clinical">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-brand-cream flex items-center justify-center text-brand-goldDark mb-4">
+                <i class="ph ph-magnifying-glass text-2xl"></i>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-semibold uppercase tracking-wider text-brand-goldDark">Preventive Care</span>
+                <span class="text-xs text-brand-muted flex items-center gap-1"><i class="ph ph-clock"></i> 30 Mins</span>
+              </div>
+              <h3 class="font-serif-lux text-2xl font-semibold text-brand-charcoal mt-2">Mole Mapping & Skin Cancer Screen</h3>
+              <p class="text-xs text-brand-slate mt-2 leading-relaxed">
+                Digital dermatoscopic examination of pigmented lesions, atypical moles, and precision benign lesion removal using radio-frequency ablation.
+              </p>
+              <ul class="mt-4 space-y-1.5 text-xs text-brand-slate/90">
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Full body high-magnification scan</li>
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Scar-free tag and wart excision</li>
+                <li class="flex items-center gap-2"><i class="ph ph-check text-brand-gold"></i> Annual melanoma screening records</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-brand-goldLight/40 flex items-center justify-between">
+              <span class="text-xs font-semibold text-brand-charcoal">Medical Precision</span>
+              <button onclick="selectServiceForBooking('Mole Mapping & Skin Check')" class="text-xs font-bold text-brand-goldDark hover:underline inline-flex items-center gap-1">
+                Book Consultation <i class="ph ph-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="before-after" class="py-20 bg-brand-charcoal text-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span class="text-xs uppercase tracking-widest text-brand-goldLight font-semibold">Real Clinical Evidence</span>
+          <h2 class="font-serif-lux text-3xl sm:text-4xl md:text-5xl font-semibold text-white">
+            Transformative Results With Natural Balance
+          </h2>
+          <p class="text-brand-muted text-sm sm:text-base">
+            Drag the interactive slider below to inspect the subtle refinement, texture restoration, and anatomical enhancement achieved by Dr. Eissan.
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+          <!-- Interactive Comparison Container -->
+          <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 select-none aspect-[16/10] sm:aspect-[16/9]" id="comparisonContainer">
+            
+            <!-- 'After' Image (Bottom Base) -->
+            <img 
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1200" 
+              alt="After Clinical Rejuvenation Treatment" 
+              class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
+              onerror="this.src='https://placehold.co/1200x800/1A1C1E/C5A880?text=After+Treatment'"
+            >
+            <span class="absolute top-4 right-4 bg-brand-charcoal/80 text-brand-gold text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full border border-brand-gold/40 z-10 backdrop-blur-md">
+              After: 6 Weeks Post-Therapy
+            </span>
+
+            <!-- 'Before' Image (Clipped Overlay) -->
+            <div id="beforeOverlay" class="absolute inset-0 overflow-hidden w-1/2 pointer-events-none border-r-2 border-brand-gold" style="width: 50%;">
+              <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1200" 
+                alt="Before Clinical Rejuvenation Treatment" 
+                class="absolute inset-0 w-full h-full object-cover object-center max-w-none"
+                id="beforeImgRef"
+                onerror="this.src='https://placehold.co/1200x800/2A2E33/FFFFFF?text=Before+Treatment'"
+              >
+              <span class="absolute top-4 left-4 bg-brand-charcoal/80 text-white text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full border border-white/20 z-10 backdrop-blur-md">
+                Before Treatment
+              </span>
+            </div>
+
+            <!-- Slider Control Range Input -->
+            <input 
+              type="range" 
+              min="0" 
+              max="100" 
+              value="50" 
+              id="sliderRange" 
+              aria-label="Drag before and after comparison"
+              class="lux-slider absolute inset-0 w-full h-full opacity-100 z-30 cursor-ew-resize"
+              oninput="handleSliderChange(this.value)"
+            >
+          </div>
+
+          <!-- Case Details & Protocol Bar -->
+          <div class="mt-6 p-6 rounded-2xl bg-white/5 border border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-wider text-brand-gold">Case Study #284</p>
+              <h4 class="font-serif-lux text-xl font-semibold text-white">Full Face Harmonization & Hyperpigmentation Clearance</h4>
+              <p class="text-xs text-brand-muted mt-1">Combination Protocol: 2 sessions Morpheus8 + 1ml Targeted Tear Trough HA Filler + Medical Pico toning.</p>
+            </div>
+            <button onclick="openBookingModal()" class="px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold text-brand-charcoal hover:bg-brand-goldLight transition whitespace-nowrap">
+              Get Similar Result
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="testimonials" class="py-20 bg-brand-ivory">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto space-y-3 mb-14">
+          <span class="text-xs uppercase tracking-widest text-brand-goldDark font-bold">Patient Experiences</span>
+          <h2 class="font-serif-lux text-3xl sm:text-4xl md:text-5xl text-brand-charcoal font-semibold">
+            Praised by Dubai's Most Discerning
+          </h2>
+          <p class="text-brand-slate text-sm">
+            Read authenticated stories from patients who trust Dr. Eissan for their dermatological wellness and aesthetic enhancements.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Testimonial 1 -->
+          <div class="p-8 rounded-2xl bg-white border border-brand-goldLight/70 shadow-luxury flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex text-amber-500 text-sm">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+              </div>
+              <p class="text-sm text-brand-slate leading-relaxed italic">
+                "Finding a doctor in Dubai who says 'no' to over-filling is so rare. Dr. Eissan analyzed my bone structure and recommended micro-dosing. My face looks rested and 7 years younger without anyone realizing I had injectables."
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-brand-cream flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-brand-cream text-brand-charcoal flex items-center justify-center font-bold font-serif-lux text-sm">
+                SA
+              </div>
+              <div>
+                <h5 class="text-sm font-bold text-brand-charcoal">Sarah Al-Mansoor</h5>
+                <p class="text-[11px] text-brand-muted">Jumeirah, Dubai • Anti-Aging Patient</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="p-8 rounded-2xl bg-white border border-brand-goldLight/70 shadow-luxury flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex text-amber-500 text-sm">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+              </div>
+              <p class="text-sm text-brand-slate leading-relaxed italic">
+                "I suffered with severe adult cystic acne for five years and consulted dozens of clinics. Dr. Eissan’s medical plan completely cured my flares within 4 months, and her laser sessions eliminated all deep scarring."
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-brand-cream flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-brand-cream text-brand-charcoal flex items-center justify-center font-bold font-serif-lux text-sm">
+                MK
+              </div>
+              <div>
+                <h5 class="text-sm font-bold text-brand-charcoal">Marcus K.</h5>
+                <p class="text-[11px] text-brand-muted">Dubai Marina • Clinical Dermatology</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="p-8 rounded-2xl bg-white border border-brand-goldLight/70 shadow-luxury flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex text-amber-500 text-sm">
+                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+              </div>
+              <p class="text-sm text-brand-slate leading-relaxed italic">
+                "The clinic ambience is akin to a 5-star hotel in Milan. Dr. Eissan's gentle touch with Profhilo and polynucleotides restored the radiance I lost after prolonged sun exposure. She is an absolute master."
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-brand-cream flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-brand-cream text-brand-charcoal flex items-center justify-center font-bold font-serif-lux text-sm">
+                LD
+              </div>
+              <div>
+                <h5 class="text-sm font-bold text-brand-charcoal">Layla D.</h5>
+                <p class="text-[11px] text-brand-muted">Downtown Dubai • Skin Rejuvenation</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-brand-cream/30 border-t border-brand-goldLight/40">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center space-y-3 mb-12">
+          <span class="text-xs uppercase tracking-widest text-brand-goldDark font-bold">Common Inquiries</span>
+          <h2 class="font-serif-lux text-3xl sm:text-4xl text-brand-charcoal font-semibold">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-brand-slate text-sm">
+            Everything you need to know about booking, treatment pre-care, and consultation protocols.
+          </p>
+        </div>
+
+        <div class="space-y-4" id="faqAccordion">
+          
+          <!-- Item 1 -->
+          <div class="rounded-xl bg-white border border-brand-goldLight/60 overflow-hidden">
+            <button onclick="toggleFaq(0)" class="w-full p-5 text-left flex items-center justify-between font-serif-lux text-lg font-semibold text-brand-charcoal focus:outline-none">
+              <span>What occurs during the initial consultation with Dr. Eissan?</span>
+              <i class="ph ph-plus faq-icon text-brand-gold text-lg transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-brand-slate leading-relaxed border-t border-brand-cream pt-3">
+              Your first visit includes a 30-to-45-minute comprehensive diagnostic assessment. Dr. Eissan evaluates skin health, subcutaneous volume, and facial dynamics using specialized high-resolution dermatological imaging before tailoring an individualized treatment roadmap.
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="rounded-xl bg-white border border-brand-goldLight/60 overflow-hidden">
+            <button onclick="toggleFaq(1)" class="w-full p-5 text-left flex items-center justify-between font-serif-lux text-lg font-semibold text-brand-charcoal focus:outline-none">
+              <span>Are procedures performed on the same day as the consultation?</span>
+              <i class="ph ph-plus faq-icon text-brand-gold text-lg transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-brand-slate leading-relaxed border-t border-brand-cream pt-3">
+              Yes, for non-invasive treatments such as Botox, Profhilo, minor skin peels, or select dermal fillers, procedures can be carried out during your initial appointment if you and Dr. Eissan agree on the immediate plan.
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="rounded-xl bg-white border border-brand-goldLight/60 overflow-hidden">
+            <button onclick="toggleFaq(2)" class="w-full p-5 text-left flex items-center justify-between font-serif-lux text-lg font-semibold text-brand-charcoal focus:outline-none">
+              <span>Does Dr. Eissan accept UAE health insurance for clinical dermatology?</span>
+              <i class="ph ph-plus faq-icon text-brand-gold text-lg transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-brand-slate leading-relaxed border-t border-brand-cream pt-3">
+              Medically necessary procedures (such as eczema management, cystic acne therapies, infectious skin disorders, and diagnostic mole biopsies) may be covered via pay-and-claim reimbursement. Our clinic coordinates all necessary DHA medical reports for your insurer.
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="rounded-xl bg-white border border-brand-goldLight/60 overflow-hidden">
+            <button onclick="toggleFaq(3)" class="w-full p-5 text-left flex items-center justify-between font-serif-lux text-lg font-semibold text-brand-charcoal focus:outline-none">
+              <span>How do I avoid unnatural or "overfilled" cosmetic results?</span>
+              <i class="ph ph-plus faq-icon text-brand-gold text-lg transition-transform duration-200"></i>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-brand-slate leading-relaxed border-t border-brand-cream pt-3">
+              Dr. Eissan champions the "European subtle touch"—reconstituting lost anatomical volume rather than exaggerating features. We use micro-bolus injections and progressive treatment stages to maintain total harmony and facial movement.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="location" class="py-20 bg-brand-ivory">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Clinic Details Card -->
+          <div class="lg:col-span-5 p-8 rounded-3xl bg-brand-charcoal text-white flex flex-col justify-between shadow-luxury">
+            <div class="space-y-6">
+              <span class="text-xs uppercase tracking-widest text-brand-gold font-bold">Dubai Flagship Clinic</span>
+              <h2 class="font-serif-lux text-3xl sm:text-4xl font-semibold">
+                Visit Dr. Eissan's Practice
+              </h2>
+              
+              <div class="space-y-4 text-sm text-brand-cream">
+                <div class="flex items-start gap-3">
+                  <i class="ph ph-map-pin text-xl text-brand-gold flex-shrink-0 mt-0.5"></i>
+                  <div>
+                    <p class="font-semibold text-white">Al Wasl Medical District, Jumeirah</p>
+                    <p class="text-xs text-brand-muted mt-0.5">Villa 42B, Al Wasl Road, Jumeirah 2, Dubai, UAE</p>
+                    <p class="text-[11px] text-brand-gold mt-1">Valet Parking Available for all Patients</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <i class="ph ph-clock text-xl text-brand-gold flex-shrink-0 mt-0.5"></i>
+                  <div>
+                    <p class="font-semibold text-white">Operating Consultation Hours</p>
+                    <p class="text-xs text-brand-muted mt-0.5">Monday – Saturday: 10:00 AM – 8:00 PM</p>
+                    <p class="text-xs text-brand-muted">Sunday: VIP By Pre-arrangement Only</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <i class="ph ph-phone text-xl text-brand-gold flex-shrink-0 mt-0.5"></i>
+                  <div>
+                    <p class="font-semibold text-white">Direct Clinical Concierge</p>
+                    <p class="text-xs text-brand-muted mt-0.5">+971 4 800 3477</p>
+                    <p class="text-xs text-brand-muted">care@dreissan-dermatology.ae</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row gap-3">
+              <a 
+                href="https://wa.me/971501234567?text=Hello%20Dr.%20Eissan%20Clinic,%20I%20would%20like%20to%20inquire%20about%20a%20dermatology%20consultation." 
+                target="_blank" 
+                class="flex-1 py-3 px-4 rounded-full text-xs font-bold uppercase tracking-wider text-brand-charcoal bg-brand-gold hover:bg-white transition flex items-center justify-center gap-2"
+              >
+                <i class="ph-fill ph-whatsapp-logo text-lg text-emerald-800"></i> WhatsApp Concierge
+              </a>
+              <button onclick="openBookingModal()" class="flex-1 py-3 px-4 rounded-full text-xs font-bold uppercase tracking-wider text-white border border-brand-gold/60 hover:bg-white/10 transition text-center">
+                Schedule Visit
+              </button>
+            </div>
+          </div>
+
+          <!-- Interactive Map Placeholder & Visual Tour -->
+          <div class="lg:col-span-7 rounded-3xl overflow-hidden border border-brand-goldLight/80 shadow-card bg-brand-cream relative min-h-[350px]">
+            <iframe 
+              title="Dr Eissan Dermatology Clinic Location Map"
+              class="w-full h-full min-h-[400px] border-0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115545.92290740925!2d55.15878486153678!3d25.175850989061614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-3.5 rounded-xl border border-brand-goldLight flex items-center justify-between text-xs">
+              <span class="text-brand-charcoal font-medium"><i class="ph-fill ph-navigation-arrow text-brand-gold"></i> Centrally situated 8 mins from Downtown & Burj Al Arab</span>
+              <a href="https://maps.google.com" target="_blank" class="text-brand-goldDark font-bold hover:underline">Get Directions</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="py-16 gold-gradient-bg text-brand-charcoal">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <h3 class="font-serif-lux text-3xl sm:text-4xl font-semibold">
+          Complimentary Skin Longevity & Dubai Sun-Care Guide
+        </h3>
+        <p class="text-sm text-brand-charcoal/80 max-w-2xl mx-auto">
+          Download Dr. Eissan's curated editorial on defending Middle Eastern skin against high UV indices, humidity flaring, and premature collagen loss.
+        </p>
+        <form onsubmit="handleNewsletterSubmit(event)" class="max-w-md mx-auto flex flex-col sm:flex-row gap-2 pt-2">
+          <input 
+            type="email" 
+            required 
+            placeholder="Enter your email address" 
+            class="flex-1 px-4 py-3 rounded-full text-xs text-brand-charcoal bg-white border border-brand-charcoal/20 focus:outline-none focus:ring-2 focus:ring-brand-charcoal"
+          >
+          <button type="submit" class="px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-brand-charcoal hover:bg-black transition whitespace-nowrap">
+            Send Editorial
+          </button>
+        </form>
+        <p id="newsletterSuccess" class="hidden text-xs font-semibold text-emerald-900 mt-2">
+          Thank you. The skin protocol guide has been dispatched to your inbox.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand-charcoal text-white pt-16 pb-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b border-white/10">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <div class="font-serif-lux text-2xl font-bold tracking-tight">
+            Dr. Eissan
+          </div>
+          <p class="text-xs text-brand-muted leading-relaxed max-w-sm">
+            Dubai's premier specialist dermatologist dedicated to clinical skincare, aesthetic rejuvenation, laser surgery, and natural facial restoration.
+          </p>
+          <div class="flex items-center space-x-3 text-brand-gold text-lg pt-2">
+            <a href="#" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-gold hover:text-brand-charcoal transition" aria-label="Instagram"><i class="ph-bold ph-instagram-logo"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-gold hover:text-brand-charcoal transition" aria-label="LinkedIn"><i class="ph-bold ph-linkedin-logo"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-gold hover:text-brand-charcoal transition" aria-label="YouTube"><i class="ph-bold ph-youtube-logo"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-brand-gold font-bold mb-4">Treatments</h4>
+          <ul class="space-y-2 text-xs text-brand-muted">
+            <li><a href="#treatments" class="hover:text-white transition">Facial Contouring & Fillers</a></li>
+            <li><a href="#treatments" class="hover:text-white transition">Anti-Aging & Wrinkle Reducers</a></li>
+            <li><a href="#treatments" class="hover:text-white transition">Morpheus8 RF Microneedling</a></li>
+            <li><a href="#treatments" class="hover:text-white transition">Laser Hyperpigmentation</a></li>
+            <li><a href="#treatments" class="hover:text-white transition">Clinical Acne Protocols</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-brand-gold font-bold mb-4">Practice</h4>
+          <ul class="space-y-2 text-xs text-brand-muted">
+            <li><a href="#about" class="hover:text-white transition">About Dr. Eissan</a></li>
+            <li><a href="#before-after" class="hover:text-white transition">Before & After Portfolio</a></li>
+            <li><a href="#testimonials" class="hover:text-white transition">Patient Reviews</a></li>
+            <li><a href="#faq" class="hover:text-white transition">Clinical FAQs</a></li>
+            <li><a href="#location" class="hover:text-white transition">Location & Valet</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-brand-gold font-bold mb-4">Accreditation</h4>
+          <p class="text-xs text-brand-muted leading-relaxed">
+            Authorized by Dubai Health Authority (DHA). Procedures adhere strictly to UAE Ministry of Health clinical governance standards.
+          </p>
+          <div class="mt-4 p-2.5 rounded-lg bg-white/5 border border-white/10 text-[11px] text-brand-goldLight">
+            DHA Regulated Facility #58190
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-brand-muted gap-4">
+        <p>© 2026 Dr. Eissan Dermatology. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-white transition">Medical Privacy Notice</a>
+          <a href="#" class="hover:text-white transition">Terms of Service</a>
+          <a href="#" class="hover:text-white transition">DHA Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="bookingModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-brand-charcoal/70 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="bg-white rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-brand-goldLight relative animate-fade-in">
+      
+      <!-- Modal Header -->
+      <div class="p-6 border-b border-brand-cream flex items-center justify-between sticky top-0 bg-white/95 backdrop-blur-md z-10">
+        <div>
+          <span class="text-[11px] font-semibold uppercase tracking-wider text-brand-goldDark">Consultation Scheduler</span>
+          <h3 id="modalTitle" class="font-serif-lux text-2xl font-bold text-brand-charcoal">Book With Dr. Eissan</h3>
+        </div>
+        <button onclick="closeBookingModal()" class="p-2 text-brand-slate hover:text-brand-charcoal rounded-full hover:bg-brand-cream focus:outline-none" aria-label="Close modal">
+          <i class="ph ph-x text-xl"></i>
+        </button>
+      </div>
+
+      <!-- Step Indicator -->
+      <div class="px-6 pt-4 flex items-center justify-between text-xs font-semibold text-brand-muted border-b border-brand-cream pb-3">
+        <span id="stepIndicator1" class="text-brand-goldDark">1. Specialty</span>
+        <span class="text-brand-cream">• • •</span>
+        <span id="stepIndicator2">2. Date & Time</span>
+        <span class="text-brand-cream">• • •</span>
+        <span id="stepIndicator3">3. Confirmation</span>
+      </div>
+
+      <!-- Modal Body Form Steps -->
+      <form id="consultationForm" onsubmit="handleBookingSubmission(event)" class="p-6 space-y-5">
+        
+        <!-- STEP 1: Select Service -->
+        <div id="step1" class="space-y-4">
+          <label class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal">Select Preferred Service</label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="serviceOptions">
+            
+            <label class="border border-brand-goldLight rounded-xl p-3.5 flex items-start gap-3 cursor-pointer hover:border-brand-gold transition bg-brand-ivory/50">
+              <input type="radio" name="service" value="Facial Harmonization & Fillers" checked class="mt-1 text-brand-gold focus:ring-brand-gold">
+              <div>
+                <span class="block text-xs font-bold text-brand-charcoal">Facial Rejuvenation</span>
+                <span class="text-[11px] text-brand-muted">Fillers, Botox, Skin Boosters</span>
+              </div>
+            </label>
+
+            <label class="border border-brand-goldLight rounded-xl p-3.5 flex items-start gap-3 cursor-pointer hover:border-brand-gold transition bg-brand-ivory/50">
+              <input type="radio" name="service" value="Morpheus8 & Laser Resurfacing" class="mt-1 text-brand-gold focus:ring-brand-gold">
+              <div>
+                <span class="block text-xs font-bold text-brand-charcoal">Laser & RF Needling</span>
+                <span class="text-[11px] text-brand-muted">Pico, Morpheus8, Pigmentation</span>
+              </div>
+            </label>
+
+            <label class="border border-brand-goldLight rounded-xl p-3.5 flex items-start gap-3 cursor-pointer hover:border-brand-gold transition bg-brand-ivory/50">
+              <input type="radio" name="service" value="Clinical Acne & Dermatology" class="mt-1 text-brand-gold focus:ring-brand-gold">
+              <div>
+                <span class="block text-xs font-bold text-brand-charcoal">Clinical Dermatology</span>
+                <span class="text-[11px] text-brand-muted">Acne, Rosacea, Eczema, Moles</span>
+              </div>
+            </label>
+
+            <label class="border border-brand-goldLight rounded-xl p-3.5 flex items-start gap-3 cursor-pointer hover:border-brand-gold transition bg-brand-ivory/50">
+              <input type="radio" name="service" value="Hair Loss & Scalp Biotherapy" class="mt-1 text-brand-gold focus:ring-brand-gold">
+              <div>
+                <span class="block text-xs font-bold text-brand-charcoal">Hair Restoration</span>
+                <span class="text-[11px] text-brand-muted">PRP, Exosomes, Regrowth</span>
+              </div>
+            </label>
+
+          </div>
+
+          <div class="pt-3">
+            <label class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-1.5">Consultation Format</label>
+            <div class="grid grid-cols-2 gap-3">
+              <label class="border border-brand-goldLight rounded-xl p-3 flex items-center justify-center gap-2 cursor-pointer text-xs font-semibold hover:border-brand-gold">
+                <input type="radio" name="consultationType" value="In-Clinic Jumeirah" checked class="text-brand-gold">
+                <span>In-Clinic (Jumeirah)</span>
+              </label>
+              <label class="border border-brand-goldLight rounded-xl p-3 flex items-center justify-center gap-2 cursor-pointer text-xs font-semibold hover:border-brand-gold">
+                <input type="radio" name="consultationType" value="Virtual Video" class="text-brand-gold">
+                <span>VIP Video Telehealth</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="button" onclick="goToStep(2)" class="w-full py-3.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-charcoal bg-brand-gold hover:bg-brand-goldDark hover:text-white transition mt-4">
+            Continue To Select Time
+          </button>
+        </div>
+
+        <!-- STEP 2: Pick Date & Time -->
+        <div id="step2" class="space-y-4 hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="bookDate" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-1">Preferred Date</label>
+              <input 
+                type="date" 
+                id="bookDate" 
+                required 
+                class="w-full px-3 py-2.5 rounded-xl border border-brand-goldLight text-xs focus:ring-1 focus:ring-brand-gold outline-none"
+              >
+            </div>
+            <div>
+              <label for="bookTime" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-1">Preferred Time Slot</label>
+              <select id="bookTime" class="w-full px-3 py-2.5 rounded-xl border border-brand-goldLight text-xs focus:ring-1 focus:ring-brand-gold outline-none bg-white">
+                <option value="10:30 AM - Morning VIP">10:30 AM - Morning</option>
+                <option value="12:00 PM - Midday">12:00 PM - Midday</option>
+                <option value="02:30 PM - Afternoon">02:30 PM - Afternoon</option>
+                <option value="04:30 PM - Afternoon">04:30 PM - Afternoon</option>
+                <option value="06:30 PM - Evening">06:30 PM - Evening</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="space-y-3 pt-2">
+            <div>
+              <label for="patientName" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-1">Patient Full Name</label>
+              <input type="text" id="patientName" required placeholder="e.g. Fatima Al-Hashimi" class="w-full px-3 py-2.5 rounded-xl border border-brand-goldLight text-xs focus:ring-1 focus:ring-brand-gold outline-none">
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label for="patientPhone" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-1">Phone / WhatsApp</label>
+                <input type="tel" id="patientPhone" required placeholder="+971 50 123 4567" class="w-full px-3 py-2.5 rounded-xl border border-brand-goldLight text-xs focus:ring-1 focus:ring-brand-gold outline-none">
+              </div>
+              <div>
+                <label for="patientEmail" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-1">Email Address</label>
+                <input type="email" id="patientEmail" required placeholder="name@domain.ae" class="w-full px-3 py-2.5 rounded-xl border border-brand-goldLight text-xs focus:ring-1 focus:ring-brand-gold outline-none">
+              </div>
+            </div>
+            <div>
+              <label for="patientNotes" class="block text-xs font-bold uppercase tracking-wider text-brand-charcoal mb-1">Specific Skin Concerns (Optional)</label>
+              <textarea id="patientNotes" rows="2" placeholder="Briefly describe what you'd like Dr. Eissan to focus on..." class="w-full px-3 py-2 rounded-xl border border-brand-goldLight text-xs focus:ring-1 focus:ring-brand-gold outline-none"></textarea>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 pt-2">
+            <button type="button" onclick="goToStep(1)" class="w-1/3 py-3 rounded-full text-xs font-bold uppercase tracking-wider border border-brand-goldLight text-brand-slate hover:bg-brand-cream transition">
+              Back
+            </button>
+            <button type="submit" class="w-2/3 py-3 rounded-full text-xs font-bold uppercase tracking-wider text-brand-charcoal bg-brand-gold hover:bg-brand-goldDark hover:text-white transition">
+              Confirm Appointment
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 3: Instant Confirmation View -->
+        <div id="step3" class="space-y-4 hidden text-center py-4">
+          <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-3xl">
+            <i class="ph-bold ph-check"></i>
+          </div>
+          <h4 class="font-serif-lux text-2xl font-bold text-brand-charcoal">Consultation Requested</h4>
+          <p class="text-xs text-brand-slate max-w-sm mx-auto leading-relaxed">
+            Thank you, <span id="confirmedName" class="font-bold text-brand-charcoal"></span>. Dr. Eissan’s medical coordinator will contact you via WhatsApp to finalize your slot.
+          </p>
+
+          <div class="bg-brand-cream/60 p-4 rounded-2xl text-left text-xs space-y-1.5 border border-brand-goldLight">
+            <p><span class="text-brand-muted">Specialty:</span> <strong id="confirmedService" class="text-brand-charcoal"></strong></p>
+            <p><span class="text-brand-muted">Date & Time:</span> <strong id="confirmedDateTime" class="text-brand-charcoal"></strong></p>
+            <p><span class="text-brand-muted">Clinic:</span> Jumeirah 2, Al Wasl Road, Dubai</p>
+          </div>
+
+          <div class="flex flex-col gap-2 pt-2">
+            <a id="whatsappConfirmBtn" href="#" target="_blank" class="w-full py-3 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-600 text-white hover:bg-emerald-700 transition flex items-center justify-center gap-2">
+              <i class="ph-fill ph-whatsapp-logo text-base"></i> Confirm Faster Via WhatsApp
+            </a>
+            <button type="button" onclick="closeBookingModal()" class="w-full py-2.5 rounded-full text-xs font-semibold text-brand-slate hover:text-brand-charcoal transition">
+              Close Window
+            </button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Set default date picker to tomorrow
+    document.addEventListener('DOMContentLoaded', () => {
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      const dateInput = document.getElementById('bookDate');
+      if (dateInput) {
+        dateInput.value = tomorrow.toISOString().split('T')[0];
+        dateInput.min = new Date().toISOString().split('T')[0];
+      }
+    });
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      if (isOpen) {
+        mobileMenu.classList.add('hidden');
+        menuIcon.className = 'ph ph-list text-2xl';
+      } else {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.className = 'ph ph-x text-2xl';
+      }
+    });
+
+    // Close mobile menu upon clicking links
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.className = 'ph ph-list text-2xl';
+      });
+    });
+
+    // Filter Treatments by Category
+    function filterTreatments(category) {
+      const cards = document.querySelectorAll('.treatment-card');
+      const buttons = document.querySelectorAll('.treatment-filter-btn');
+
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-filter') === category) {
+          btn.className = 'treatment-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition bg-brand-charcoal text-white';
+        } else {
+          btn.className = 'treatment-filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition bg-white text-brand-slate border border-brand-goldLight/80 hover:bg-brand-cream';
+        }
+      });
+
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Before and After Interactive Split Screen Handler
+    function handleSliderChange(val) {
+      const beforeOverlay = document.getElementById('beforeOverlay');
+      const beforeImgRef = document.getElementById('beforeImgRef');
+      const container = document.getElementById('comparisonContainer');
+      
+      if (beforeOverlay && container && beforeImgRef) {
+        beforeOverlay.style.width = val + '%';
+        // Keep the inner image full width to avoid stretching
+        beforeImgRef.style.width = container.offsetWidth + 'px';
+      }
+    }
+
+    window.addEventListener('resize', () => {
+      const slider = document.getElementById('sliderRange');
+      if (slider) {
+        handleSliderChange(slider.value);
+      }
+    });
+
+    // FAQ Accordion Toggle
+    function toggleFaq(index) {
+      const contents = document.querySelectorAll('.faq-content');
+      const icons = document.querySelectorAll('.faq-icon');
+
+      const isHidden = contents[index].classList.contains('hidden');
+      
+      // Close all
+      contents.forEach(c => c.classList.add('hidden'));
+      icons.forEach(i => {
+        i.className = 'ph ph-plus faq-icon text-brand-gold text-lg transition-transform duration-200';
+      });
+
+      // If clicked item was closed, open it
+      if (isHidden) {
+        contents[index].classList.remove('hidden');
+        icons[index].className = 'ph ph-minus faq-icon text-brand-gold text-lg transition-transform duration-200';
+      }
+    }
+
+    // Modal Workflow Controllers
+    const bookingModal = document.getElementById('bookingModal');
+
+    function openBookingModal() {
+      bookingModal.classList.remove('hidden');
+      goToStep(1);
+    }
+
+    function closeBookingModal() {
+      bookingModal.classList.add('hidden');
+    }
+
+    function selectServiceForBooking(serviceTitle) {
+      openBookingModal();
+      // Set the radio button if matching or just advance
+      const radios = document.querySelectorAll('input[name="service"]');
+      radios.forEach(r => {
+        if (serviceTitle.toLowerCase().includes('acne') && r.value.includes('Acne')) r.checked = true;
+        if (serviceTitle.toLowerCase().includes('morpheus') && r.value.includes('Laser')) r.checked = true;
+        if (serviceTitle.toLowerCase().includes('filler') && r.value.includes('Fillers')) r.checked = true;
+        if (serviceTitle.toLowerCase().includes('hair') && r.value.includes('Hair')) r.checked = true;
+      });
+      goToStep(2);
+    }
+
+    function goToStep(step) {
+      const s1 = document.getElementById('step1');
+      const s2 = document.getElementById('step2');
+      const s3 = document.getElementById('step3');
+      const ind1 = document.getElementById('stepIndicator1');
+      const ind2 = document.getElementById('stepIndicator2');
+      const ind3 = document.getElementById('stepIndicator3');
+
+      s1.classList.add('hidden');
+      s2.classList.add('hidden');
+      s3.classList.add('hidden');
+
+      ind1.className = 'text-brand-muted';
+      ind2.className = 'text-brand-muted';
+      ind3.className = 'text-brand-muted';
+
+      if (step === 1) {
+        s1.classList.remove('hidden');
+        ind1.className = 'text-brand-goldDark font-bold';
+      } else if (step === 2) {
+        s2.classList.remove('hidden');
+        ind2.className = 'text-brand-goldDark font-bold';
+      } else if (step === 3) {
+        s3.classList.remove('hidden');
+        ind3.className = 'text-emerald-700 font-bold';
+      }
+    }
+
+    function handleBookingSubmission(e) {
+      e.preventDefault();
+      const patientName = document.getElementById('patientName').value;
+      const patientPhone = document.getElementById('patientPhone').value;
+      const bookDate = document.getElementById('bookDate').value;
+      const bookTime = document.getElementById('bookTime').value;
+      
+      const selectedService = document.querySelector('input[name="service"]:checked')?.value || 'Dermatology Consultation';
+      const consultationType = document.querySelector('input[name="consultationType"]:checked')?.value || 'In-Clinic';
+
+      // Fill confirmation view
+      document.getElementById('confirmedName').textContent = patientName;
+      document.getElementById('confirmedService').textContent = `${selectedService} (${consultationType})`;
+      document.getElementById('confirmedDateTime').textContent = `${bookDate} at ${bookTime}`;
+
+      // Set up direct WhatsApp deep-link
+      const waMsg = encodeURIComponent(`Hello Dr. Eissan Clinic, I would like to confirm my consultation booking:\n• Patient: ${patientName}\n• Service: ${selectedService}\n• Format: ${consultationType}\n• Date: ${bookDate} (${bookTime})\n• Phone: ${patientPhone}`);
+      document.getElementById('whatsappConfirmBtn').href = `https://wa.me/971501234567?text=${waMsg}`;
+
+      goToStep(3);
+    }
+
+    function handleNewsletterSubmit(e) {
+      e.preventDefault();
+      document.getElementById('newsletterSuccess').classList.remove('hidden');
+      e.target.reset();
+    }
+
+    // Close modal on Escape key press
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !bookingModal.classList.contains('hidden')) {
+        closeBookingModal();
+      }
+    });
+
+    // Close modal on backdrop click
+    bookingModal.addEventListener('click', (e) => {
+      if (e.target === bookingModal) {
+        closeBookingModal();
+      }
+    });
+  </script>
+</body>
+</html>
